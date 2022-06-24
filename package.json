@@ -1,0 +1,58 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "logsnag",
+  "title": "LogSnag",
+  "description": "A real-time feed of events for your projects",
+  "icon": "command-icon.png",
+  "author": "nuro",
+  "categories": [
+    "Communication",
+    "Data",
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "LogSnag",
+      "description": "Publish a new event to LogSnag",
+      "mode": "view"
+    },
+    {
+      "name": "index",
+      "title": "Publish Event",
+      "description": "Publish a new event to LogSnag",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "description": "Your LogSnag access token.",
+      "name": "accessToken",
+      "placeholder": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "required": true,
+      "title": "Access Token",
+      "type": "password"
+    }
+  ],
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  },
+  "dependencies": {
+    "@raycast/api": "^1.36.1",
+    "logsnag": "^0.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "~16.10.0",
+    "@types/react": "^17.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  }
+}
